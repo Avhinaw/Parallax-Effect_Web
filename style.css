@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 10rem;
+    color: white;
+    text-transform: uppercase;
 }
 .container{
     height: 100vh;
@@ -18,8 +25,16 @@
     transform-style: preserve-3d;
     z-index: -1;
 }
+.background{
+    transform: translateZ(-40px) scale(5.1);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
 .background, .foreground{
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
